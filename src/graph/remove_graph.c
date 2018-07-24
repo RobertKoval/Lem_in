@@ -28,6 +28,7 @@ void	ft_remove_edge(t_vertex *v)
 		e = t;
 	}
 }
+
 void	ft_remove_graph(t_queue *graph)
 {
 	while (graph->front)

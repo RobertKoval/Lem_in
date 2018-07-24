@@ -84,5 +84,5 @@ int			main(void)
 	ft_remove_ant_list(&app);
 	ft_clean_all(&app.paths);
 	ft_remove_graph(&app.graph);
-	return 0;
+	return (0);
 }

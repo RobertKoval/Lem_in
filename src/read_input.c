@@ -22,7 +22,6 @@ void	ft_read_input(t_data *app)
 	while (get_next_line(0, &app->line) > 0)
 	{
 		ft_enqueu(&app->file, NULL, NULL, app->line);
-		//ft_printf("%s\n", app->line);
 		if (ft_validate_comment(app->line, &target, stage))
 			;
 		else if (stage == 1 && ft_save_ants(app))
@@ -38,5 +37,4 @@ void	ft_read_input(t_data *app)
 			ft_error();
 		ft_strdel(&app->line);
 	}
-	//ft_printf("\n");
 }

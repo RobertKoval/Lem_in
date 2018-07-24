@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-int		ft_atoi(const char *str)
+int				ft_atoi(const char *str)
 {
 	size_t	result;
 	size_t	minus;
@@ -38,7 +38,7 @@ int		ft_atoi(const char *str)
 	return (result * minus);
 }
 
-long long int		ft_llatoi(const char *str)
+long long int	ft_llatoi(const char *str)
 {
 	long long int	result;
 	size_t			minus;
@@ -48,7 +48,7 @@ long long int		ft_llatoi(const char *str)
 	minus = 1;
 	i = 0;
 	while (ft_isspace(str[i]) || (str[i] == '+' &&
-								  (str[i + 1] >= '0' && str[i + 1] <= '9')))
+			(str[i + 1] >= '0' && str[i + 1] <= '9')))
 		i++;
 	if (str[i] == '-')
 	{

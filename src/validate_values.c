@@ -12,7 +12,7 @@
 
 #include "../includes/lem_in.h"
 
-int	ft_validate_comment(const char *str, short int *target, short int s)
+int		ft_validate_comment(const char *str, short int *target, short int s)
 {
 	if (!str)
 		return (0);
@@ -27,7 +27,7 @@ int	ft_validate_comment(const char *str, short int *target, short int s)
 	return (0);
 }
 
-int	ft_validate_room(const char *str)
+int		ft_validate_room(const char *str)
 {
 	int	i;
 	int	spaces;
@@ -51,7 +51,7 @@ int	ft_validate_room(const char *str)
 	return (1);
 }
 
-int	ft_validate_tunel(const char *str)
+int		ft_validate_tunel(const char *str)
 {
 	int i;
 	int line;
@@ -73,7 +73,7 @@ int	ft_validate_tunel(const char *str)
 	return (0);
 }
 
-void		ft_validate_edges(t_vertex *v)
+void	ft_validate_edges(t_vertex *v)
 {
 	t_edge *po;
 	t_edge *t;
@@ -94,7 +94,7 @@ void		ft_validate_edges(t_vertex *v)
 	}
 }
 
-void		ft_validate_vertexes(t_data *app)
+void	ft_validate_vertexes(t_data *app)
 {
 	t_qnode *po;
 	t_qnode *t;
@@ -110,7 +110,7 @@ void		ft_validate_vertexes(t_data *app)
 		{
 			if (ft_strcmp(po->val.vertex->name, t->val.vertex->name) == 0 ||
 				(po->val.vertex->coor[0] == t->val.vertex->coor[0] &&
-				 po->val.vertex->coor[1] == t->val.vertex->coor[1]))
+				po->val.vertex->coor[1] == t->val.vertex->coor[1]))
 				ft_error();
 			t = t->next;
 		}

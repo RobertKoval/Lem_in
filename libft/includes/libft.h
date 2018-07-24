@@ -44,11 +44,11 @@
 ** MACROS
 */
 
-typedef unsigned int t_uint;
-typedef unsigned long int t_luint;
-typedef unsigned long long int t_lluint;
-typedef long int t_lint;
-typedef long long int t_llint;
+typedef unsigned int			t_uint;
+typedef unsigned long int		t_luint;
+typedef unsigned long long int	t_lluint;
+typedef long int				t_lint;
+typedef long long int			t_llint;
 
 /*
 ** BASE FUNCTIONS

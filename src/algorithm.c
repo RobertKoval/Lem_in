@@ -26,7 +26,7 @@ void	ft_reset_graph(t_data *app)
 	}
 }
 
-int 	ft_restore_the_path(t_vertex *end, t_data *app)
+int		ft_restore_the_path(t_vertex *end, t_data *app)
 {
 	t_queue		*path;
 	t_vertex	*po;
@@ -54,7 +54,7 @@ int 	ft_restore_the_path(t_vertex *end, t_data *app)
 	return (0);
 }
 
-void 	ft_bfs(t_vertex *start)
+void	ft_bfs(t_vertex *start)
 {
 	t_queue		queue;
 	t_vertex	*tmp;
@@ -62,7 +62,6 @@ void 	ft_bfs(t_vertex *start)
 
 	queue = (t_queue){.front = NULL};
 	ft_enqueu(&queue, start, NULL, NULL);
-
 	while (queue.front)
 	{
 		tmp = queue.front->val.vertex;
@@ -82,7 +81,7 @@ void 	ft_bfs(t_vertex *start)
 	}
 }
 
-int 	ft_doubled_path(t_queue *paths)
+int		ft_doubled_path(t_queue *paths)
 {
 	t_qnode *path;
 	t_qnode *p2;

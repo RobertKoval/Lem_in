@@ -18,7 +18,7 @@ void		ft_error(void)
 	exit(1);
 }
 
-static void		ft_fucking_norme(int *val, const char *po)
+static void	ft_fucking_norme(int *val, const char *po)
 {
 	if (*val == 0)
 		*val = *po - '0';
@@ -29,7 +29,7 @@ static void		ft_fucking_norme(int *val, const char *po)
 	}
 }
 
-int	ft_get_next_int(char **src)
+int			ft_get_next_int(char **src)
 {
 	int		val;
 	int		minus;
