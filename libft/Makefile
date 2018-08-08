@@ -43,7 +43,7 @@ INC_DIR = includes
 #OBJS = $(addprefix $(OBJ_DIR)/, $(OBJ))
 #INCS = $(addprefix $(INC_DIR)/, $(INC))
 
-CFLAGS = -Wall -Werror -Wextra -std=c11
+CFLAGS = -Wall -Werror -Wextra
 CPPFLAGS = -Iincludes
 
 

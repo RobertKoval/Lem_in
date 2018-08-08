@@ -28,7 +28,7 @@ LIBFT_DIR = libft/
 LIBFT_INC = $(LIBFT_DIR)includes/
 LIBFT = $(LIBFT_DIR)libft.a
 
-CFLAGS = -Wall -Werror -Wextra -std=c11
+CFLAGS = -Wall -Werror -Wextra
 CPPFLAGS = -Iincludes
 LDFLAGS = -lft -L $(LIBFT_DIR)
 
