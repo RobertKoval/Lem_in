@@ -19,7 +19,7 @@ int		ft_save_ants(t_data *app)
 
 	i = 0;
 	if (!app->line || app->line[0] < '1' || app->line[0] > '9')
-		return (0);
+		ft_error();
 	while (app->line[i] != '\0')
 	{
 		if (app->line[i] < '0' || app->line[i] > '9')
